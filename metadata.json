@@ -1,0 +1,7 @@
+{
+  "name": "MindMenders AI - Premium Mental Health Companion",
+  "description": "A spacious, minimal, and premium AI-powered mental wellness platform featuring 3D meditative visuals and empathetic support.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMenders AI | Premium Mental Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+        --font-heading: 'Outfit', sans-serif;
+      }
+      body {
+        font-family: var(--font-sans);
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #0a0c10;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+        letter-spacing: -0.02em;
+      }
+      /* Custom scrollbar with high contrast */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(10, 12, 16, 1);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(99, 102, 241, 0.5);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(99, 102, 241, 0.8);
+      }
+      /* Refined Glass Card with better contrast */
+      .glass-card {
+        background: rgba(255, 255, 255, 1); /* Fallback to opaque for better visibility */
+        border: 1px solid rgba(226, 232, 240, 1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .dark .glass-card, [data-theme='dark'] .glass-card {
+        background: rgba(15, 17, 21, 1);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.6);
+      }
+      /* High visibility text selection */
+      ::selection {
+        background: #6366f1;
+        color: white;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://esm.sh/three@^0.182.0",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+        "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+        "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+        "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+        "framer-motion": "https://esm.sh/framer-motion@^12.29.2"
+      }
+    }
+    </script>
+  </head>
+  <body class="dark">
+    <div id="root"></div>
+  </body>
+</html>
